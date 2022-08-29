@@ -1,0 +1,254 @@
+
+Path : 1
+
+ Startpoint: EXECUTE_ADD_REG_SELECT_REG1_reg (rising edge-triggered flip-flop clocked by pericore_clko_ospi)
+  Endpoint: EXECUTE_WDATA_CMD_REG3_reg (rising edge-triggered flip-flop clocked by pericore_clko_ospi)
+  Mode: MBIST
+  Corner: MAX_LT_SETUP_CW
+  Scenario: MBIST_MAX_LT_SETUP_CW
+  Path Group: pericore_clko_ospi
+  Path Type: max
+  Sigma:   3.00
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                                          Fanout    Cap      Trans     Derate     Incr      Path          Location        Attributes
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock pericore_clko_ospi (rise edge)                                                                                                                  0.00      0.00
+  clock network delay (propagated)                                                                                                                      0.56      0.56
+
+  MBISTPG_POINTER_CNTRL/EXECUTE_ADD_REG_SELECT_REG1_reg/CP (SEDFCNQSGD1BWP30P140)                                                   0.20      1.00      0.00      0.56 r    (561.04,1312.77)   s, n
+  MBISTPG_POINTER_CNTRL/EXECUTE_ADD_REG_SELECT_REG1_reg/Q (SEDFCNQSGD1BWP30P140)                                                    0.08      1.00      0.22      0.79 f    (563.96,1312.72)   s, n
+  MBISTPG_POINTER_CNTRL/ADD_REG_SELECT[1] (net)                                                                   13      0.01
+  MBISTPG_ADD_GEN/U139/I (CKNSGD0BWP30P140HVT)                                                                                      0.07      1.00      0.00      0.79 f    (541.65,1316.33)   s
+  MBISTPG_ADD_GEN/U139/ZN (CKNSGD0BWP30P140HVT)                                                                                     0.22      1.00      0.23      1.02 r    (541.54,1316.32)   s
+  MBISTPG_ADD_GEN/n20 (net)                                                                                       10      0.01
+  MBISTPG_ADD_GEN/U22/A1 (OAI22SGD0BWP30P140)                                                                                       0.22      1.00      0.00      1.02 r    (536.52,1317.41)   s
+  MBISTPG_ADD_GEN/U22/ZN (OAI22SGD0BWP30P140)                                                                                       0.08      1.00      0.14      1.16 f    (536.58,1317.26)   s
+  MBISTPG_ADD_GEN/X_ADD_CNT_TO_BUF[1] (net)                                                                        2      0.00
+  MBISTPG_ADD_GEN/tessent_persistent_cell_X_ADD_CNT_1/I (BUFFSGD1BWP30P140)                                                         0.08      1.00      0.00      1.16 f    (536.26,1313.62)   s
+  MBISTPG_ADD_GEN/tessent_persistent_cell_X_ADD_CNT_1/Z (BUFFSGD1BWP30P140)                                                         0.03      1.00      0.09      1.25 f    (536.51,1313.61)   s
+  MBISTPG_ADD_GEN/X_R[1] (net)                                                                                     5      0.00
+  MBISTPG_ADD_GEN/U99/A2 (OR4SGD0BWP30P140)                                                                                         0.03      1.00      0.00      1.25 f    (540.37,1313.74)   s
+  MBISTPG_ADD_GEN/U99/Z (OR4SGD0BWP30P140)                                                                                          0.03      1.00      0.09      1.34 f    (540.71,1313.60)   s
+  MBISTPG_ADD_GEN/n86 (net)                                                                                        2      0.00
+  MBISTPG_ADD_GEN/U74/A2 (OAI22SGD0BWP30P140)                                                                                       0.03      1.00      0.00      1.34 f    (542.00,1311.82)   s
+  MBISTPG_ADD_GEN/U74/ZN (OAI22SGD0BWP30P140)                                                                                       0.16      1.00      0.11      1.46 r    (542.18,1311.86)   s
+  MBISTPG_ADD_GEN/X1_MINMAX_TRIGGER (net)                                                                          3      0.00
+  tessent_persistent_cell_X1_MINMAX_TRIGGER/I (BUFFSGD1BWP30P140)                                                                   0.16      1.00      0.00      1.46 r    (557.26,1311.82)   s
+  tessent_persistent_cell_X1_MINMAX_TRIGGER/Z (BUFFSGD1BWP30P140)                                                                   0.03      1.00      0.09      1.54 r    (557.51,1311.81)   s
+  X1_MINMAX_TRIGGER (net)                                                                                          1      0.00
+  MBISTPG_POINTER_CNTRL/U63/A1 (AN2SGD0BWP30P140)                                                                                   0.03      1.00      0.00      1.54 r    (567.53,1310.99)   s
+  MBISTPG_POINTER_CNTRL/U63/Z (AN2SGD0BWP30P140)                                                                                    0.03      1.00      0.05      1.59 r    (567.88,1310.92)   s
+  MBISTPG_POINTER_CNTRL/N1178 (net)                                                                                1      0.00
+  MBISTPG_POINTER_CNTRL/U5/A1 (XOR2SGD0BWP30P140)                                                                                   0.03      1.00      0.00      1.59 r    (568.63,1310.94)   s
+  MBISTPG_POINTER_CNTRL/U5/Z (XOR2SGD0BWP30P140)                                                                                    0.02      1.00      0.06      1.65 f    (569.41,1310.91)   s
+  MBISTPG_POINTER_CNTRL/n2 (net)                                                                                   1      0.00
+  MBISTPG_POINTER_CNTRL/U7/A2 (NR3SGD0BWP30P140)                                                                                    0.02      1.00      0.00      1.65 f    (569.20,1309.00)   s
+  MBISTPG_POINTER_CNTRL/U7/ZN (NR3SGD0BWP30P140)                                                                                    0.21      1.00      0.15      1.80 r    (569.27,1309.12)   s
+  MBISTPG_POINTER_CNTRL/NEXT_STATE_TRUE (net)                                                                      4      0.00
+  MBISTPG_POINTER_CNTRL/U52/B1 (INV2SGD0BWP30P140)                                                                                  0.21      1.00      0.00      1.80 r    (577.34,1308.29)   s
+  MBISTPG_POINTER_CNTRL/U52/ZN (INV2SGD0BWP30P140)                                                                                  0.09      1.00      0.12      1.93 f    (577.31,1308.22)   s
+  MBISTPG_POINTER_CNTRL/n42 (net)                                                                                  7      0.00
+  MBISTPG_POINTER_CNTRL/U38/B2 (AOI22SGD0BWP30P140)                                                                                 0.09      1.00      0.00      1.93 f    (580.58,1309.12)   s
+  MBISTPG_POINTER_CNTRL/U38/ZN (AOI22SGD0BWP30P140)                                                                                 0.06      1.00      0.10      2.02 r    (580.42,1309.16)   s
+  MBISTPG_POINTER_CNTRL/n51 (net)                                                                                  1      0.00
+  MBISTPG_POINTER_CNTRL/U37/A3 (ND3SGD0BWP30P140)                                                                                   0.06      1.00      0.00      2.02 r    (581.06,1308.22)   s
+  MBISTPG_POINTER_CNTRL/U37/ZN (ND3SGD0BWP30P140)                                                                                   0.04      1.00      0.04      2.07 f    (581.32,1308.22)   s
+  MBISTPG_POINTER_CNTRL/NEXT_POINTER_TO_BUF[4] (net)                                                               1      0.00
+  MBISTPG_POINTER_CNTRL/tessent_persistent_cell_NEXT_POINTER4/I (BFFSGD1BWP30P140)                                                 0.04      1.00      0.00      2.07 f    (580.99,1306.41)   s
+  MBISTPG_POINTER_CNTRL/tessent_persistent_cell_NEXT_POINTER4/Z (BFFSGD1BWP30P140)                                                 0.05      1.00      0.07      2.14 f    (580.74,1306.41)   s
+  MBISTPG_POINTER_CNTRL/NEXT_POINTER[4] (net)                                                                      8      0.01
+  MBISTPG_POINTER_CNTRL/U428/I (CKNSGD0BWP30P140HVT)                                                                                0.05      1.00      0.00      2.14 f    (580.44,1305.53)   s
+  MBISTPG_POINTER_CNTRL/U428/ZN (CKNSGD0BWP30P140HVT) <-                                                                              0.48      1.00      0.37      2.51 r    (580.32,1305.52)   s
+  MBISTPG_POINTER_CNTRL/n32 (net)                                                                                 16      0.01
+  MBISTPG_POINTER_CNTRL/U394/A1 (NR2OPTIBSGD1BWP30P140)                                                                             0.48      1.00      0.00      2.51 r    (572.31,1301.14)   s
+  MBISTPG_POINTER_CNTRL/U394/ZN (NR2OPTIBSGD1BWP30P140)                                                                             0.12      1.00      0.21      2.72 f    (572.27,1300.99)   s
+  MBISTPG_POINTER_CNTRL/n69 (net)                                                                                  3      0.00
+  MBISTPG_POINTER_CNTRL/U393/I (CKNSGD0BWP30P140HVT)                                                                                0.12      1.00      0.00      2.72 f    (578.96,1298.33)   s
+  MBISTPG_POINTER_CNTRL/U393/ZN (CKNSGD0BWP30P140HVT)                                                                               0.13      1.00      0.15      2.87 r    (579.07,1298.32)   s
+  MBISTPG_POINTER_CNTRL/n255 (net)                                                                                 4      0.00
+  MBISTPG_POINTER_CNTRL/U392/A1 (NR2OPTIBSGD1BWP30P140)                                                                             0.13      1.00      0.00      2.87 r    (583.59,1298.19)   s
+  MBISTPG_POINTER_CNTRL/U392/ZN (NR2OPTIBSGD1BWP30P140)                                                                             0.18      1.00      0.13      3.00 f    (583.62,1298.34)   s
+  MBISTPG_POINTER_CNTRL/n187 (net)                                                                                14      0.01
+  MBISTPG_POINTER_CNTRL/U391/I (CKNSGD0BWP30P140HVT)                                                                                0.18      1.00      0.00      3.00 f    (582.12,1284.81)   s
+  MBISTPG_POINTER_CNTRL/U391/ZN (CKNSGD0BWP30P140HVT)                                                                               0.30      1.00      0.30      3.30 r    (582.00,1284.82)   s
+  MBISTPG_POINTER_CNTRL/n305 (net)                                                                                 7      0.01
+  MBISTPG_POINTER_CNTRL/U237/A1 (CKND2SGD0BWP30P140HVT)                                                                             0.30      1.00      0.00      3.30 r    (579.95,1284.69)   s
+  MBISTPG_POINTER_CNTRL/U237/ZN (CKND2SGD0BWP30P140HVT)                                                                             0.11      1.00      0.21      3.51 f    (579.99,1284.82)   s
+  MBISTPG_POINTER_CNTRL/n269 (net)                                                                                 3      0.00
+  MBISTPG_POINTER_CNTRL/U185/A2 (CKND2SGD0BWP30P140HVT)                                                                             0.11      1.00      0.00      3.51 f    (580.71,1283.91)   s
+  MBISTPG_POINTER_CNTRL/U185/ZN (CKND2SGD0BWP30P140HVT)                                                                             0.13      1.00      0.15      3.66 r    (580.52,1283.91)   s
+  MBISTPG_POINTER_CNTRL/n190 (net)                                                                                 3      0.00
+  MBISTPG_POINTER_CNTRL/U184/A2 (ND3SGD0BWP30P140)                                                                                  0.13      1.00      0.00      3.66 r    (580.96,1290.08)   s
+  MBISTPG_POINTER_CNTRL/U184/ZN (ND3SGD0BWP30P140)                                                                                  0.05      1.00      0.07      3.73 f    (581.04,1290.22)   s
+  MBISTPG_POINTER_CNTRL/n293 (net)                                                                                 1      0.00
+  MBISTPG_POINTER_CNTRL/U183/A1 (NR3SGD0BWP30P140)                                                                                  0.05      1.00      0.00      3.73 f    (582.65,1289.20)   s
+  MBISTPG_POINTER_CNTRL/U183/ZN (NR3SGD0BWP30P140)                                                                                  0.05      1.00      0.06      3.79 r    (582.70,1289.33)   s
+  MBISTPG_POINTER_CNTRL/n292 (net)                                                                                 1      0.00
+  MBISTPG_POINTER_CNTRL/U182/A4 (ND4SGD1BWP30P140)                                                                                  0.05      1.00      0.00      3.79 r    (582.39,1289.32)   s
+  MBISTPG_POINTER_CNTRL/U182/ZN (ND4SGD1BWP30P140)                                                                                  0.11      1.00      0.09      3.88 f    (582.07,1289.30)   s
+  MBISTPG_POINTER_CNTRL/n277 (net)                                                                                 2      0.00
+  MBISTPG_POINTER_CNTRL/U181/A3 (NR3SGD0BWP30P140)                                                                                  0.11      1.00      0.00      3.88 f    (582.47,1295.62)   s
+  MBISTPG_POINTER_CNTRL/U181/ZN (NR3SGD0BWP30P140)                                                                                  0.08      1.00      0.10      3.98 r    (582.71,1295.61)   s
+  MBISTPG_POINTER_CNTRL/n289 (net)                                                                                 1      0.00
+  MBISTPG_POINTER_CNTRL/U180/A3 (AOI31SGD0BWP30P140)                                                                                0.08      1.00      0.00      3.98 r    (582.12,1298.32)   s
+  MBISTPG_POINTER_CNTRL/U180/ZN (AOI31SGD0BWP30P140)                                                                                0.11      1.00      0.10      4.07 f    (581.86,1298.35)   s
+  MBISTPG_POINTER_CNTRL/N1115 (net)                                                                                1      0.00
+  pericore/mp200/ospi/r7fs6c27e_gate_tessent_mbist_c25_controller_inst/MBISTPG_POINTER_CNTRL/EXECUTE_WDATA_CMD_REG3_reg/D (SEDFCNQSGD1BWP30P140)        
+                                                                                                                                    0.11      1.00      0.00      4.08 f    (571.50,1312.77)   s, n
+  data arrival time                                                                                                                                                4.08
+
+  clock pericore_clko_ospi (rise edge)                                                                                                                  33.35     33.35
+  clock network delay (propagated)                                                                                                                       0.51     33.86
+  clock reconvergence pessimism                                                                                                                          0.05     33.92
+  pericore/mp200/ospi/r7fs6c27e_gate_tessent_mbist_c25_controller_inst/MBISTPG_POINTER_CNTRL/EXECUTE_WDATA_CMD_REG3_reg/CP (SEDFCNQSGD1BWP30P140)         
+                                                                                                                                    0.20      1.00      0.00     33.92 r    (572.51,1312.77)   s, n
+  clock uncertainty                                                                                                                                    -0.50     33.42
+  library setup time                                                                                                                          1.00     -0.21     33.21
+  data required time                                                                                                                                             33.21
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                             33.21
+  data arrival time                                                                                                                                              -4.08
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  statistical adjustment                                                                                                                                0.06     29.19
+  slack (MET)                                                                                                                                                    29.19
+
+Path : 2
+
+  Startpoint: cspf/bpm/sram0/eccram_32/ia_0_0/i0/i0 (rising edge-triggered flip-flop clocked by iclk_thr)
+  Endpoint: cspf/dftpf/daxs/daxs_mode/mode_dp/reg_temp_d/q_reg_1_ (rising edge-triggered flip-flop clocked by iclk_div)
+  Mode: USER
+  Corner: MAX_LT_SETUP_CW
+  Scenario: USER_MAX_LT_SETUP_CW
+  Path Group: TO_SRAM01
+  Path Type: max
+  Sigma:   3.00
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock iclk_thr (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  cspf/bpm/sram0/eccram_32/ia_0_0/i0/i0/CLK (sram_sp_4096x40)
+                                                   0.00      0.00 r
+  cspf/bpm/sram0/eccram_32/ia_0_0/i0/i0/Q[10] (sram_sp_4096x40)
+                                                   1.65      1.65 f
+  cspf/bpm/sram0/rambridge/icc2_placefoptctmTdsLR_1_450587/ZN (AOI21SGD6BWP30P140)
+                                                   0.41      2.06 r
+  cspf/bpm/sram0/rambridge/icc2_placefoptctmTdsLR_1_450783/ZN (ND2OPTIBSGD4BWP30P140)
+                                                   0.05      2.10 f
+  cspf/bpm/sram0/rambridge/mux_multi_01_10/mux_multi/icc2_placefoptctmTdsLR_1_312482/Z (AO21SGD4BWP30P140)
+                                                   0.07      2.17 f
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/syndg/icc2_placefoptctmTdsLR_1_434703/ZN (INVSGD4BWP30P140)
+                                                   0.02      2.19 r
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/syndg/icc2_placefoptctmTdsLR_1_312420/ZN (AOI22SGD4BWP30P140)
+                                                   0.02      2.22 f
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/syndg/icc2_placefoptctmTdsLR_2_434698/Z (XOR2OPTNSGD2BWP30P140)
+                                                   0.05      2.27 r
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/syndg/icc2_placefoptctmTdsLR_3_434699/ZN (XNR2OPTNSGD2BWP30P140)
+                                                   0.05      2.32 f
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/syndg/U81/Z (XOR2OPTNSGD2BWP30P140) <-
+                                                   0.05      2.37 r
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/syndg/icc2_placefoptctmTdsLR_1_311049/Z (XOR2OPTNSGD2BWP30P140)
+                                                   0.05      2.41 f
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/syndg/icc2_placefoptctmTdsLR_1_307092/Z (XOR2OPTNSGD8BWP30P140)
+                                                   0.06      2.48 r
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/syndd/icc2_placefoptctmTdsLR_1_434474/ZN (IVSGD1BWP30P140)
+                                                   0.02      2.50 f
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/syndd/icc2_placefoptctmTdsLR_1_368108/ZN (NR2OPTIBSGD1BWP30P140)
+                                                   0.04      2.54 r
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/syndd/U111/ZN (ND2OPTIBSGD4BWP30P140)
+                                                   0.04      2.58 f
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/syndd/U79/ZN (NR2OPTPASGD2BWP30P140)
+                                                   0.03      2.61 r
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/errcor/U36/ZN (ND2OPTPASGD2BWP30P140)
+                                                   0.02      2.63 f
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/rx_sramif_eccchk/errcor/U109/Z (XOR2OPTNSGD8BWP30P140)
+                                                   0.06      2.69 r
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/icc2_placefoptctmTdsLR_4_434926/ZN (ND2OPTPASGD6BWP30P140)
+                                                   0.02      2.71 f
+  cspf/bpm/sram0/rambridge/uscssram0200_ecc/icc2_placefoptctmTdsLR_1_434923/ZN (IND2SGD8BWP30P140)
+                                                   0.02      2.73 r
+  cspf/bpm/sram0/rambridge/U761/ZN (ND2OPTPASGD6BWP30P140)
+                                                   0.02      2.75 f
+  cspf/bpm/sram0/rambridge/icc2_placefoptctmTdsLR_1_402577/ZN (ND2OPTPASGD4BWP30P140)
+                                                   0.02      2.77 r
+  cspf/bpm/sram0/rambridge/ahb_sram_bridge/icc2_placefoptctmTdsLR_1_386974/ZN (ND2OPTPASGD4BWP30P140)
+                                                   0.01      2.78 f
+  cspf/bpm/sram0/rambridge/ahb_sram_bridge/icc2_placefoptctmTdsLR_1_311299/ZN (ND2OPTPASGD2BWP30P140)
+                                                   0.01      2.80 r
+  cspf/bpm/sram0/rambridge/icc2_placefoptctmTdsLR_1_310848/ZN (ND2OPTPASGD2BWP30P140)
+                                                   0.02      2.82 f
+  cspf/bpm/sram0/icc2_placefoptZINV_8_inst_431367/ZN (INVSGD3BWP30P140)
+                                                   0.02      2.83 r
+  cspf/bpm/bus/stzf_s0biu/stzf_ahb_mask/ahblabt_slave/abtm_slave/icc2_placeioptFTB_12998__115750/Z (BUFFSGD4BWP30P140)
+                                                   0.02      2.86 r
+  cspf/bpm/bus/stzf_s0biu/stzf_ahb_mask/ahbldec_master/decm_master/icc2_placefoptctmTdsLR_1_450082/ZN (ND2OPTPASGD4BWP30P140)
+                                                   0.01      2.87 f
+  cspf/bpm/bus/stzf_s0biu/stzf_ahb_mask/ahbldec_master/decm_master/icc2_placefoptctmTdsLR_1_364962/ZN (INVSGD4BWP30P140)
+                                                   0.01      2.88 r
+  cspf/bpm/bus/ambabus/ahblic_ic_ahbl_s0biu_7/ahblabt_s0biu/abtm_s0biu/icc2_placeioptFTB_12896__115648/Z (BUFFSGD16BWP30P140)
+                                                   0.03      2.92 r
+  cspf/bpm/bus/ambabus/ahblic_ic_ahbl_s0biu_7/ahblabt_s0biu/abtm_s0biu/icc2_placeioptFTB_12897__115649/Z (BFFSGD16BWP30P140)
+                                                   0.06      2.97 r
+  cspf/bpm/bus/ambabus/ahblic_ic_ahbl_s0biu_7/ahbldec_ic_ahbl_s0biu_2_ic_ahbl_s0biu_7/decm_ic_ahbl_s0biu_2_ic_ahbl_s0biu_7/icc2_placefoptctmTdsLR_1_368818/Z (AN2SGD16BWP30P140)
+                                                   0.07      3.04 r
+  cspf/bpm/bus/ambabus/ahblic_ic_ahbl_s0biu_2/ahblabt_ic_ahbl_s0biu_2_ic_ahbl_s0biu_7/abtm_ic_ahbl_s0biu_2_ic_ahbl_s0biu_7/icc2_placeioptFTB_12042__114794/Z (BUFFSGD4BWP30P140)
+                                                   0.10      3.15 r
+  cspf/bpm/bus/ambabus/ahblic_ic_ahbl_s0biu_2/ahblabt_ic_ahbl_s0biu_2_ic_ahbl_s0biu_7/abtm_ic_ahbl_s0biu_2_ic_ahbl_s0biu_7/icc2_placeioptFTB_12043__114795/Z (BUFFSGD4BWP30P140)
+                                                   0.02      3.17 r
+  cspf/bpm/bus/ambabus/ahblic_ic_ahbl_s0biu_2/ahbldec_ic_ahbl_s0biu_1_ic_ahbl_s0biu_2/decm_ic_ahbl_s0biu_1_ic_ahbl_s0biu_2/icc2_placeioptFTB_11926__114678/Z (BUFFSGD4BWP30P140)
+                                                   0.02      3.19 r
+  cspf/bpm/bus/ambabus/ahblic_ic_ahbl_s0biu_1/ahblabt_ic_ahbl_s0biu_1_ic_ahbl_s0biu_2/abtm_ic_ahbl_s0biu_1_ic_ahbl_s0biu_2/icc2_placeioptFTB_11858__114610/Z (BUFFSGD4BWP30P140)
+                                                   0.02      3.21 r
+  cspf/bpm/bus/ambabus/ahblic_ic_ahbl_s0biu_1/ahbldec_ic_ahbl_dmac_daxs_1_ic_ahbl_s0biu_1/decm_ic_ahbl_dmac_daxs_1_ic_ahbl_s0biu_1/icc2_placeioptFTB_11729__114481/Z (BUFFSGD12BWP30P140)
+                                                   0.03      3.24 r
+  cspf/bpm/bus/ambabus/ahblic_ic_ahbl_dmac_daxs_1/ahblabt_ic_ahbl_dmac_daxs_1_ic_ahbl_s0biu_1/abtm_ic_ahbl_dmac_daxs_1_ic_ahbl_s0biu_1/icc2_placeioptFTB_5752__108504/Z (BUFFSGD12BWP30P140)
+                                                   0.03      3.27 r
+  cspf/bpm/bus/ambabus/ahblic_ic_ahbl_dmac_daxs_1/ahbldec_dmac/decm_dmac/U2/ZN (ND2OPTSGD12BWP30P140)
+                                                   0.04      3.31 f
+  cspf/bpm/bus/ambabus/ahblic_ic_ahbl_dmac_daxs_1/ahbldec_dmac/decm_dmac/icc2_placefoptctmTdsLR_1_326417/ZN (ND2SGD8BWP30P140)
+                                                   0.08      3.39 r
+  cspf/bpm/bus/bussel/U22/Z (AN2SGD4BWP30P140)     0.04      3.43 r
+  cspf/dftpf/daxs_bridge/icc2_placeioptFTB_53976__156728/Z (BUFFSGD4BWP30P140)
+                                                   0.03      3.46 r
+  cspf/dftpf/daxs/daxs_mode/mode_dp/get_tmp_datai/icc2_placefoptctmTdsLR_2_297494/ZN (AOI21OPTREPBSGD4BWP30P140)
+                                                   0.02      3.47 f
+  cspf/dftpf/daxs/daxs_mode/mode_dp/get_tmp_datai/icc2_placefoptctmTdsLR_1_297493/ZN (IVSGD1P5BWP30P140)
+                                                   0.02      3.50 r
+  cspf/dftpf/daxs/daxs_mode/mode_dp/reg_temp_d/q_reg_1_/D (SDFSYNCNQSGD1BWP30P140)
+                                                   0.00      3.50 r
+  data arrival time                                          3.50
+
+  clock iclk_div (rise edge)                       2.50      2.50
+  clock network delay (ideal)                      0.00      2.50
+  clock reconvergence pessimism                    0.00      2.50
+  cspf/dftpf/daxs/daxs_mode/mode_dp/reg_temp_d/q_reg_1_/CP (SDFSYNCNQSGD1BWP30P140)
+                                                   0.00      2.50 r
+  clock uncertainty                               -0.50      2.00
+  library setup time                              -0.06      1.94
+  data required time                                         1.94
+  ------------------------------------------------------------------------
+  data required time                                         1.94
+  data arrival time                                         -3.50
+  ------------------------------------------------------------------------
+  statistical adjustment                           0.02     -1.53
+  slack (VIOLATED)                                          -1.53
+
+
+SPEC :
+
+Through Pin we need grep the cell from where <- this symbol pointing 

@@ -1,0 +1,360 @@
+Startpoint: snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Endpoint: snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Mode: func
+Corner: ss_125c
+Scenario: func.ss_125c
+Path Group: SYS_2x_CLK
+Path Type: max
+
+Point                                                                                   Fanout    Cap      Trans      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock SYS_2x_CLK (rise edge)                                                                                          0.00      0.00
+clock network delay (ideal)                                                                                           0.20      0.20
+
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/CLK (DFFARX1_HVT)                      0.20      0.00      0.20
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/QN (DFFARX1_HVT)                       0.64      1.59      1.79
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n (net)                         1      0.80
+snps_OCC_controller/U_clk_control_i_0/U8/A1 (AND2X1_LVT)                                                    0.64      0.00      1.79
+snps_OCC_controller/U_clk_control_i_0/U8/Y (AND2X1_LVT)                                                     0.10      0.03      1.81
+snps_OCC_controller/U_clk_control_i_0/n15 (net)                                            2      1.67
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/A1 (NAND2X0_LVT)                              0.10      0.00      1.81
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/Y (NAND2X0_LVT)                               0.09      0.07      1.88
+snps_OCC_controller/U_clk_control_i_0/n15 (net)                                            2      1.67
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/A1 (NBUFFX8_LVT)                              0.10      0.00      1.81
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/Y (NBUFFX8_LVT)                               0.09      0.07      1.88
+snps_OCC_controller/U_clk_control_i_0/n15 (net)                                            2      1.67
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/A1 (NBUFFX8_LVT)                              0.10      0.00      1.81
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/Y (NBUFFX8_LVT)                               0.09      0.07      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/n3 (net)                        1      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U1/A1 (XNOR2X2_LVT)                              0.09      0.10      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U1/Y (XNOR2X2_LVT)                               0.05      0.13      2.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/n[8] (net)                             2      1.77
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI67_26013/A2 (AND2X1_LVT)                             0.05      0.00      2.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI67_26013/Y (AND2X1_LVT)                              0.03      0.06      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/popt_net_22132 (net)                   1      1.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI68_26014/A1 (AND2X1_LVT)                             0.03      0.00      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI68_26014/Y (AND2X1_LVT)                              0.03      0.06      2.13
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/n5 (net)                               1      1.21
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/D (DFFARX1_HVT)                        0.03      0.00      2.13
+data arrival time                                                                                                               2.13
+
+clock SYS_2x_CLK (rise edge)                                                                                          2.30      2.30
+clock network delay (ideal)                                                                                           0.20      2.50
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/CLK (DFFARX1_HVT)                      0.20      0.00      2.50
+clock uncertainty                                                                                                    -0.20      2.30
+library setup time                                                                                                   -1.10      1.20
+data required time                                                                                                              1.20
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              1.20
+data arrival time                                                                                                              -2.13
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                               ,-0.93
+Startpoint: snps_OCC_controller/U_clk_control_i_0/load_n_meta_1_l_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Endpoint: snps_OCC_controller/U_clk_control_i_0/load_n_meta_2_l_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Mode: func
+Corner: ss_125c
+Scenario: func.ss_125c
+Path Group: SYS_2x_CLK
+Path Type: max
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg
+Point                                                                                   Fanout    Cap      Trans      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock SYS_2x_CLK (rise edge)                                                                                          0.00      0.00
+clock network delay (ideal)                                                                                           0.00      0.00
+
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_1_l_reg/CLK (DFFARX1_HVT)                                 0.20      0.00      0.00
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_1_l_reg/Q (DFFARX1_HVT)                                   0.35      2.30      2.30
+snps_OCC_controller/U_clk_control_i_0/n19 (net)                                            1      1.10
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_2_l_reg/D (DFFARX1_LVT)                                   0.35      0.00      2.30
+data arrival time                                                                                                               2.30
+
+clock SYS_2x_CLK (rise edge)                                                                                          2.30      2.30
+clock network delay (ideal)                                                                                           0.16      2.46
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_2_l_reg/CLK (DFFARX1_LVT)                                 0.20      0.00      2.46
+clock uncertainty                                                                                                    -0.20      2.26
+library setup time                                                                                                   -0.19      2.07
+data required time                                                                                                              2.07
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              2.07
+data arrival time                                                                                                              -2.30
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                               -0.22
+Startpoint: snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Endpoint: snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Mode: func
+Corner: ss_125c
+Scenario: func.ss_125c
+Path Group: SYS_2x_CLK
+Path Type: max
+
+Point                                                                                   Fanout    Cap      Trans      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock SYS_2x_CLK (rise edge)                                                                                          0.00      0.00
+clock network delay (ideal)                                                                                           0.20      0.20
+
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/CLK (DFFARX1_HVT)                      0.20      0.00      0.20
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/QN (DFFARX1_HVT)                       0.64      1.59      1.79
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n (net)                         1      0.80
+snps_OCC_controller/U_clk_control_i_0/U8/A1 (AND2X1_LVT)                                                    0.64      0.00      1.79
+snps_OCC_controller/U_clk_control_i_0/U8/Y (AND2X1_LVT)                                                     0.10      0.03      1.81
+snps_OCC_controller/U_clk_control_i_0/n15 (net)                                            2      1.67
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/A1 (NAND2X0_LVT)                              0.10      0.00      1.81
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/Y (NAND2X0_LVT)                               0.09      0.07      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/n3 (net)                        1      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U1/A1 (XNOR2X2_LVT)                              0.09      0.00      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U1/Y (XNOR2X2_LVT)                               0.05      0.13      2.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/n[8] (net)                             2      1.77
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI67_26013/A2 (AND2X1_LVT)                             0.05      0.00      2.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI67_26013/Y (AND2X1_LVT)                              0.03      0.06      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/popt_net_22132 (net)                   1      1.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI68_26014/A1 (AND2X1_LVT)                             0.03      0.00      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI68_26014/Y (AND2X1_LVT)                              0.03      0.06      2.13
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/n5 (net)                               1      1.21
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/D (DFFARX1_HVT)                        0.03      0.00      2.13
+data arrival time                                                                                                               2.13
+
+clock SYS_2x_CLK (rise edge)                                                                                          2.30      2.30
+clock network delay (ideal)                                                                                           0.20      2.50
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/CLK (DFFARX1_HVT)                      0.20      0.00      2.50
+clock uncertainty                                                                                                    -0.20      2.30
+library setup time                                                                                                   -1.10      1.20
+data required time                                                                                                              1.20
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              1.20
+data arrival time                                                                                                              -2.13
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                               ,-0.93
+Startpoint: snps_OCC_controller/U_clk_control_i_0/load_n_meta_1_l_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Endpoint: snps_OCC_controller/U_clk_control_i_0/load_n_meta_2_l_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Mode: func
+Corner: ss_125c
+Scenario: func.ss_125c
+Path Group: SYS_2x_CLK
+Path Type: max
+
+Point                                                                                   Fanout    Cap      Trans      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock SYS_2x_CLK (rise edge)                                                                                          0.00      0.00
+clock network delay (ideal)                                                                                           0.00      0.00
+
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_1_l_reg/CLK (DFFARX1_HVT)                                 0.20      0.00      0.00
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_1_l_reg/Q (DFFARX1_HVT)                                   0.35      2.30      2.30
+snps_OCC_controller/U_clk_control_i_0/n19 (net)                                            1      1.10
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_2_l_reg/D (DFFARX1_LVT)                                   0.35      0.00      2.30
+data arrival time                                                                                                               2.30
+
+clock SYS_2x_CLK (rise edge)                                                                                          2.30      2.30
+clock network delay (ideal)                                                                                           0.16      2.46
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_2_l_reg/CLK (DFFARX1_LVT)                                 0.20      0.00      2.46
+clock uncertainty                                                                                                    -0.20      2.26
+library setup time                                                                                                   -0.19      2.07
+data required time                                                                                                              2.07
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              2.07
+data arrival time                                                                                                              -2.30
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                               -0.22
+Startpoint: snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Endpoint: snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Mode: func
+Corner: ss_125c
+Scenario: func.ss_125c
+Path Group: SYS_2x_CLK
+Path Type: max
+
+Point                                                                                   Fanout    Cap      Trans      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock SYS_2x_CLK (rise edge)                                                                                          0.00      0.00
+clock network delay (ideal)                                                                                           0.20      0.20
+
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/CLK (DFFARX1_HVT)                      0.20      0.00      0.20
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/QN (DFFARX1_HVT)                       0.64      1.59      1.79
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n (net)                         1      0.80
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/A1 (NAND2X0_LVT)                              0.10      0.00      1.81
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/Y (NAND2X0_LVT)                               0.09      0.07      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr/tercnt_n (net)                         1      0.80
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr/add_83/U2/A1 (NAND2X0_LVT)                              0.10      0.00      1.81
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr/add_83/U2/Y (NAND2X0_LVT)                               0.09      0.07      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr/tercnt_n (net)                         1      0.80
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr/add_83/U2/A1 (NAND2X0_LVT)                              0.10      0.00      1.81
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr/add_83/U2/Y (NAND2X0_LVT)                               0.09      0.07      1.88
+snps_OCC_controller/U_clk_control_i_0/tercnt_n (net)                         1      0.80
+snps_OCC_controller/U_clk_control_i_0/add_83/U2/A1 (NAND2X0_LVT)                              0.10      0.00      1.81
+snps_OCC_controller/U_clk_control_i_0/add_83/U2/Y (NAND2X0_LVT)                               0.09      0.07      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle/tercnt_n (net)                         1      0.80
+snps_OCC_controller/U_clk_control_i_0/U_cycle/add_83/U2/A1 (NAND2X0_LVT)                              0.10      0.00      1.81
+snps_OCC_controller/U_clk_control_i_0/U_cycle/add_83/U2/Y (NAND2X0_LVT)                               0.09      0.07      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/n3 (net)                        1      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U1/A1 (XNOR2X2_LVT)                              0.09      0.00      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U1/Y (XNOR2X2_LVT)                               0.05      0.13      2.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/n[8] (net)                             2      1.77
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI67_26013/A2 (AND2X1_LVT)                             0.05      0.00      2.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI67_26013/Y (AND2X1_LVT)                              0.03      0.06      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/popt_net_22132 (net)                   1      1.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI68_26014/A1 (AND2X1_LVT)                             0.03      0.00      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI68_26014/Y (AND2X1_LVT)                              0.03      0.06      2.13
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/n5 (net)                               1      1.21
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/D (DFFARX1_HVT)                        0.03      0.00      2.13
+data arrival time                                                                                                               2.13
+
+clock SYS_2x_CLK (rise edge)                                                                                          2.30      2.30
+clock network delay (ideal)                                                                                           0.20      2.50
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/CLK (DFFARX1_HVT)                      0.20      0.00      2.50
+clock uncertainty                                                                                                    -0.20      2.30
+library setup time                                                                                                   -1.10      1.20
+data required time                                                                                                              1.20
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              1.20
+data arrival time                                                                                                              -2.13
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                               ,-0.93
+Startpoint: snps_OCC_controller/U_clk_control_i_0/load_n_meta_1_l_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Endpoint: snps_OCC_controller/U_clk_control_i_0/load_n_meta_2_l_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Mode: func
+Corner: ss_125c
+Scenario: func.ss_125c
+Path Group: SYS_2x_CLK
+Path Type: max
+
+Point                                                                                   Fanout    Cap      Trans      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock SYS_2x_CLK (rise edge)                                                                                          0.00      0.00
+clock network delay (ideal)                                                                                           0.00      0.00
+
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_1_l_reg/CLK (DFFARX1_HVT)                                 0.20      0.00      0.00
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_1_l_reg/Q (DFFARX1_HVT)                                   0.35      2.30      2.30
+snps_OCC_controller/U_clk_control_i_0/n19 (net)                                            1      1.10
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_2_l_reg/D (DFFARX1_LVT)                                   0.35      0.00      2.30
+data arrival time                                                                                                               2.30
+
+clock SYS_2x_CLK (rise edge)                                                                                          2.30      2.30
+clock network delay (ideal)                                                                                           0.16      2.46
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_2_l_reg/CLK (DFFARX1_LVT)                                 0.20      0.00      2.46
+clock uncertainty                                                                                                    -0.20      2.26
+library setup time                                                                                                   -0.19      2.07
+data required time                                                                                                              2.07
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              2.07
+data arrival time                                                                                                              -2.30
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                               -0.22
+Startpoint: snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Endpoint: snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Mode: func
+Corner: ss_125c
+Scenario: func.ss_125c
+Path Group: SYS_2x_CLK
+Path Type: max
+
+Point                                                                                   Fanout    Cap      Trans      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock SYS_2x_CLK (rise edge)                                                                                          0.00      0.00
+clock network delay (ideal)                                                                                           0.20      0.20
+
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/CLK (DFFARX1_HVT)                      0.20      0.00      0.20
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/QN (DFFARX1_HVT)                       0.64      1.59      1.79
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n (net)                         1      0.80
+snps_OCC_controller/U_clk_control_i_0/U8/A1 (AND2X1_LVT)                                                    0.64      0.00      1.79
+snps_OCC_controller/U_clk_control_i_0/U8/Y (AND2X1_LVT)                                                     0.10      0.03      1.81
+snps_OCC_controller/U_clk_control_i_0/n15 (net)                                            2      1.67
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/A1 (NAND2X0_LVT)                              0.10      0.00      1.81
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/Y (NAND2X0_LVT)                               0.09      0.07      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/n3 (net)                        1      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U1/A1 (XNOR2X2_LVT)                              0.09      0.00      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U1/Y (XNOR2X2_LVT)                               0.05      0.13      2.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/n[8] (net)                             2      1.77
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI67_26013/A2 (AND2X1_LVT)                             0.05      0.00      2.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI67_26013/Y (AND2X1_LVT)                              0.03      0.06      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/popt_net_22132 (net)                   1      1.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI68_26014/A1 (AND2X1_LVT)                             0.03      0.00      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI68_26014/Y (AND2X1_LVT)                              0.03      0.06      2.13
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/n5 (net)                               1      1.21
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/D (DFFARX1_HVT)                        0.03      0.00      2.13
+data arrival time                                                                                                               2.13
+
+clock SYS_2x_CLK (rise edge)                                                                                          2.30      2.30
+clock network delay (ideal)                                                                                           0.20      2.50
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/CLK (DFFARX1_HVT)                      0.20      0.00      2.50
+clock uncertainty                                                                                                    -0.20      2.30
+library setup time                                                                                                   -1.10      1.20
+data required time                                                                                                              1.20
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              1.20
+data arrival time                                                                                                              -2.13
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                               ,-0.93
+Startpoint: snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Endpoint: snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Mode: func
+Corner: ss_125c
+Scenario: func.ss_125c
+Path Group: SYS_2x_CLK
+Path Type: max
+
+Point                                                                                   Fanout    Cap      Trans      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock SYS_2x_CLK (rise edge)                                                                                          0.00      0.00
+clock network delay (ideal)                                                                                           0.20      0.20
+
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/CLK (DFFARX1_HVT)                      0.20      0.00      0.20
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/QN (DFFARX1_HVT)                       0.64      1.59      1.79
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n (net)                         1      0.80
+snps_OCC_controller/U_clk_control_i_0/U8/A1 (AND2X1_LVT)                                                    0.64      0.00      1.79
+snps_OCC_controller/U_clk_control_i_0/U8/Y (AND2X1_LVT)                                                     0.10      0.03      1.81
+snps_OCC_controller/U_clk_control_i_0/n15 (net)                                            2      1.67
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/A1 (NAND2X0_LVT)                              0.10      0.00      1.81
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U2/Y (NAND2X0_LVT)                               0.09      0.07      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/n3 (net)                        1      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U1/A1 (XNOR2X2_LVT)                              0.09      0.00      1.88
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/add_83/U1/Y (XNOR2X2_LVT)                               0.05      0.13      2.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/n[8] (net)                             2      1.77
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI67_26013/A2 (AND2X1_LVT)                             0.05      0.00      2.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI67_26013/Y (AND2X1_LVT)                              0.03      0.06      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/popt_net_22132 (net)                   1      1.01
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI68_26014/A1 (AND2X1_LVT)                             0.03      0.00      2.07
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/SGI68_26014/Y (AND2X1_LVT)                              0.03      0.06      2.13
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/n5 (net)                               1      1.21
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/D (DFFARX1_HVT)                        0.03      0.00      2.13
+data arrival time                                                                                                               2.13
+
+clock SYS_2x_CLK (rise edge)                                                                                          2.30      2.30
+clock network delay (ideal)                                                                                           0.20      2.50
+snps_OCC_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg/CLK (DFFARX1_HVT)                      0.20      0.00      2.50
+clock uncertainty                                                                                                    -0.20      2.30
+library setup time                                                                                                   -1.10      1.20
+data required time                                                                                                              1.20
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              1.20
+data arrival time                                                                                                              -2.13
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                               ,-0.93
+Startpoint: snps_OCC_controller/U_clk_control_i_0/load_n_meta_1_l_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Endpoint: snps_OCC_controller/U_clk_control_i_0/load_n_meta_2_l_reg (rising edge-triggered flip-flop clocked by SYS_2x_CLK)
+Mode: func
+Corner: ss_125c
+Scenario: func.ss_125c
+Path Group: SYS_2x_CLK
+Path Type: max
+
+Point                                                                                   Fanout    Cap      Trans      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock SYS_2x_CLK (rise edge)                                                                                          0.00      0.00
+clock network delay (ideal)                                                                                           0.00      0.00
+
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_1_l_reg/CLK (DFFARX1_HVT)                                 0.20      0.00      0.00
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_1_l_reg/Q (DFFARX1_HVT)                                   0.35      2.30      2.30
+snps_OCC_controller/U_clk_control_i_0/n19 (net)                                            1      1.10
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_2_l_reg/D (DFFARX1_LVT)                                   0.35      0.00      2.30
+data arrival time                                                                                                               2.30
+
+clock SYS_2x_CLK (rise edge)                                                                                          2.30      2.30
+clock network delay (ideal)                                                                                           0.16      2.46
+snps_OCC_controller/U_clk_control_i_0/load_n_meta_2_l_reg/CLK (DFFARX1_LVT)                                 0.20      0.00      2.46
+clock uncertainty                                                                                                    -0.20      2.26
+library setup time                                                                                                   -0.19      2.07
+data required time                                                                                                              2.07
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              2.07
+data arrival time                                                                                                              -2.30
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                               -0.22
